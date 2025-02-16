@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Yojana Sarthi - AI-Powered Scheme Finder
 
-## Getting Started
+## 🚀 About the Project
+Yojana Sarthi is an AI-powered platform that helps users find relevant **government schemes** based on their details. The system automatically categorizes schemes into **eligible** and **ineligible** groups, providing a seamless experience for users to discover benefits they qualify for.
 
-First, run the development server:
+## ✨ Key Features
+- **AI-Based Scheme Matching** - Uses AI to recommend schemes based on user inputs.
+- **User Eligibility Filtering** - Takes user details like gender, state, income, etc., and filters schemes accordingly.
+- **Scheme Auto-Updates** - Retrieves updated schemes from official sources dynamically.
+- **Voice & Text Search** - Allows users to search schemes using **text** or **voice commands**.
+- **Filtering & Sorting** - Categorization of schemes into **State, Central, and All Schemes** with sorting options.
 
-```bash
+## 🛠 Technology Stack
+### Frontend
+- **Next.js 15** (React Framework)
+- **Tailwind CSS** (Styling)
+- **ShadCN** (UI Components)
+
+### Backend
+- **FastAPI** (Python-based API)
+- **MongoDB** (Database for storing schemes)
+
+### AI & Search
+- **Elasticsearch** (Search & indexing)
+- **SBERT & Random Forest** (ML-based recommendation)
+
+## 🚀 Getting Started
+### Prerequisites
+Ensure you have the following installed:
+- **Node.js** (v18+)
+- **Python** (3.9+)
+- **MongoDB** (running locally or cloud instance)
+
+### 1️⃣ Setup Frontend
+```sh
+cd frontend
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Frontend runs at: `http://localhost:3000`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2️⃣ Setup Backend
+```sh
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+Backend runs at: `http://localhost:8000`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📌 Features in Progress
+- [ ] **Gemini API Fine-Tuning** for better scheme recommendations
+- [ ] **User Authentication** for saving preferences
+- [ ] **Mobile App (Expo React Native)**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🤝 Contributing
+Feel free to submit issues, feature requests, or contribute via pull requests! 🚀
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📜 License
+This project is **open-source** under the MIT License.
