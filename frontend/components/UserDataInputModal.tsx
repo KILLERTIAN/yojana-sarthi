@@ -68,7 +68,7 @@ export const UserDataInputModal = () => {
         {step === 3 && (
           <div className="flex flex-col gap-4">
             <label>Gender</label>
-            <Select name="gender" value={userData.gender} onChange={handleChange}>
+            <Select name="gender" value={userData.gender} >
               <SelectItem value="">Select</SelectItem>
               <SelectItem value="Male">Male</SelectItem>
               <SelectItem value="Female">Female</SelectItem>
@@ -86,7 +86,7 @@ export const UserDataInputModal = () => {
         {step === 4 && (
           <div className="flex flex-col gap-4">
             <label>State</label>
-            <Select name="state" value={userData.state} onChange={handleChange}>
+            <Select name="state" value={userData.state}>
               <SelectItem value="">Select</SelectItem>
               <SelectItem value="Puducherry">Puducherry</SelectItem>
               <SelectItem value="Madhya Pradesh">Madhya Pradesh</SelectItem>

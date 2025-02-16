@@ -1,6 +1,6 @@
 import { Hero } from "@/components/Hero";
 import { HowToUse } from "@/components/HowToUse";
-import { Navbar } from "@/components/Navbar";
+// import { Navbar } from "@/components/Navbar";
 import { SchemeCat } from "@/components/SchemeCat";
 
 export default function Home() {
