@@ -1,0 +1,46 @@
+# Virtual Environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs & Debug
+*.log
+logs/
+debug.log
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Database & Cache
+*.sqlite3
+db.sqlite3
+__pycache__/
+*.db
+*.db-journal
+
+# VS Code
+.vscode/
+.settings/
+
+# JetBrains (IntelliJ, WebStorm, PyCharm, etc.)
+.idea/
+workspace.xml
+shelf/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Local database files
+/mongo-data/
+
+Lib
+myenv
